@@ -4,9 +4,17 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
   standalone: true,
-  imports: [MatButtonModule, MatCardModule],
+  imports: [],
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  template: `
+  <h1>Hello Angular</h1>
+  <h2>Cities Dropdown</h2>
+  <h2>Pipes</h2>
+  `,
 })
-export class AppComponent {}
+export class AppComponent {
+  fee = 0.0012345;
+
+  currency = 'EUR';
+  amount = 123.4567;
+}
